@@ -70,16 +70,17 @@ map("v", ">", ">gv")
 -- TODO:
 -- [x] todo highlight
 -- [x] plugin that closes ( [
--- [ ] git blame
+-- [x] git blame
 -- [x] gl - show extended error
 -- [x] space + L - to run LazyVim
 -- [x] space + c + f - to format
 -- [x] space + / - to comment string (gc works perfectly fine)
 -- [x] space + c - to immediately close buffer
--- [ ] folds
+-- [x] folds
 -- [x] run linter
--- [ ] close file and open again should preserve manipuation history (something with iterm2)
+-- [x] close file and open again should preserve manipuation history (something with iterm2)
 -- [ ] use tmux
+-- [x] quick actions from linter
 -------------
 -------------
 -------------

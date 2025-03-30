@@ -25,6 +25,7 @@ vim.opt.cursorline = true
 
 -- Store undos between sessions
 vim.opt.undofile = true
+vim.opt.undodir = vim.fn.expand("~/.local/share/nvim/undo")
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
@@ -55,6 +56,10 @@ vim.opt.scrolloff = 5
 
 vim.opt.autowrite = true -- Enable auto write
 vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
+
+vim.opt.foldlevel = 99
+vim.opt.foldenable = true
+
 
 -- CHECK THIS SETTINGS ONCE AGAIN
 

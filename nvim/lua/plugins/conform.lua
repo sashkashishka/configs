@@ -8,17 +8,19 @@ return {
 			-- You can customize some of the format options for the filetype (:help conform.format)
 			-- rust = { "rustfmt" },
 			-- Conform will run the first available formatter
-			javascript = { "prettierd" },
-			javascriptreact = { "prettierd" },
-			typescript = { "prettierd" },
-			typescriptreact = { "prettierd" },
+			javascript = { "prettierd", "eslint_d" },
+			javascriptreact = { "prettierd", "eslint_d" },
+			typescript = { "prettierd", "eslint_d" },
+			typescriptreact = { "prettierd", "eslint_d" },
+			json = { "prettierd" },
+			css = { "prettierd" },
 		},
 	},
 	keys = {
 		{
 			"<leader>cf",
 			function()
-				require("conform").format()
+				require("conform").format({ timeout_ms = 3000 })
 			end,
 			desc = "[C]ode [F]ormat",
 		},
