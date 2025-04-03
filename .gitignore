@@ -2,3 +2,5 @@
 !.gitignore
 !nvim/
 !ranger/
+!tmux/
+tmux/plugins/
