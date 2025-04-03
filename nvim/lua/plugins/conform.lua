@@ -8,10 +8,22 @@ return {
 			-- You can customize some of the format options for the filetype (:help conform.format)
 			-- rust = { "rustfmt" },
 			-- Conform will run the first available formatter
-			javascript = { "prettierd", "eslint_d" },
-			javascriptreact = { "prettierd", "eslint_d" },
-			typescript = { "prettierd", "eslint_d" },
-			typescriptreact = { "prettierd", "eslint_d" },
+			javascript = { 
+				"prettierd",
+				-- "eslint_d"
+			},
+			javascriptreact = { 
+				"prettierd",
+				-- "eslint_d"
+			},
+			typescript = { 
+				"prettierd",
+				-- "eslint_d"
+			},
+			typescriptreact = { 
+				"prettierd",
+				-- "eslint_d"
+			},
 			json = { "prettierd" },
 			css = { "prettierd" },
 		},
