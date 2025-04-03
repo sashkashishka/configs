@@ -15,6 +15,8 @@ map("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", {
 map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 map("n", "<leader>bc", ":bd<cr>", { desc = "Delete Buffer and Window", remap = false, silent = true })
+map("n", "<leader>bl", ":BufferLineCloseRight<cr>", { desc = "Close tabs to the right", remap = false, silent = true })
+map("n", "<leader>bh", ":BufferLineCloseLeft<cr>", { desc = "Close tabs to the left", remap = false, silent = true })
 
 -- windows
 map("n", "<leader>w-", "<C-W>s", { desc = "Split Window Below", remap = true })
@@ -66,6 +68,7 @@ map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
 -- better indenting
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+
 
 -- TODO:
 -- [x] todo highlight
