@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-if [ -z ~/.config/tmux/plugins/tpm ]; then
+fullPathToTpm=$HOME/.config/tmux/plugins/tpm
+fullPathToConfig=$HOME/.config/tmux/tmux.config
+
+mkdir -p ~/.config/tmux/plugins/tpm
+
+if [ -z "$( ls -A $fullPathToTpm )" ]; then
   git clone git@github.com:tmux-plugins/tpm.git ~/.config/tmux/plugins/tpm
 fi
 
-tmux -f ~/.config/tmux/tmux.config
+tmux kill-server
+tmux -f $fullPathToConfig
